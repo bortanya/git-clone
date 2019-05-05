@@ -51,7 +51,166 @@ textarea {
 }
 
 /* Layout */
+
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width:1170px;
+	margin:0 auto;
+}
+
+.ba-header{
+	position: absolute;
+	width:100%;
+	left:0;
+	top:30px;
+}
+
+.ba-header .ba-container{
+	display:flex;
+	justify-content: space-between;
+	justify-content: space-between;
+	align-items:center;
+	align-items:center;
+}
+
+.ba-hero{
+background-image:url(../img/hero.jpg);
+background-color:#000;
+background-size: cover;
+background-size: cover;
+background-size: cover;
+background-repeat:no-repeat;
+height:100vh;
+text-align:center;
+color:#fff;
+display:flex;
+align-items:center;
+align-items:center;
+
+}
+
+.ba-hero__title{
+	font-size:60px;
+
+}
+
+.ba-hero__text{
+	font-size:30px;
+	margin-bottom: 1.8em;
+}
+
+body{
+	font-family:'Poppins',sans-serif;
+}
+
+.ba-hero___btn{
+	border:2px solid rgb(221,221,221);
+	border-radius:10px;
+	height:54px;
+	font-weight:500;
+	color:#fff;
+	display:inline-flex;
+	justify-content: center;
+	justify-content: center;
+	align-items:center;
+	align-items: center;
+
+	text-decoration:none;
+	padding:0 1.25em;
+
+}
+
+.ba-hero__btn:hover,
+.ba-hero__btn:focus{
+	background-color: #FFF;
+	color:#000;
+
+}
+
+.logo_link{
+	text-decoration:none;
+	color:#fff;
+	font-size: 33px;
+
+}
+.logo{
+	margin:0;
+}
+
+.menu{
+	display:flex;
+	list-style:none;
+}
+
+.menu_item + .menu_item{
+	margin-left: 30px;
+}
+.menu_item{
+	overflow:hidden;
+}
+
+.menu_link{
+	text-decoration:none;
+	color:#fff;
+	font-weight:500;
+	position:relative;
+}
+
+.menu_link:hover,
+.menu_linl:focus{
+	color:#e71cb4;
+}
+
+.menu_link:hover:after,
+.menu_link:focus:after{
+	left:0;
+	height:3px;
+	transform:translateX(0);
+
+}
+
+.menu_link:after{
+	content:'';
+	position: absolute;
+	width:100%;
+	display: inline-block;
+	height: 1px;
+	border-color:#e71cb4;
+	left:0;
+	bottom:0;
+	transform:translateX(-100%);
+	transition:left .2s, height .5s, transform .75s;
+	transition-timing-function: cubic-bezier(0.42, 0, 1.12);
+}
+
+.arrow{
+	position:relative;
+	font-size:1em;
+	padding-left:74px;
+}
+.arrow-number{
+	color:yellow;
+	font-size:1.5em;
+	margin-right:35px;
+}
+
+.arrow:before,
+.arrow:after{
+	content:'';
+	position:absolute;
+	left:0;
+	height: 15px;
+	width: 3px;
+	background-color: tomato;
+	display:inline-block;
+}
+
+.arrow:before{
+	transform:rotate(45deg);
+	top:9px;
+}
+
+.arrow:after{
+	transform:rotate(-45deg);
 }
